@@ -699,8 +699,33 @@ h1 {
     min-height: 80vh;
 }
 
-.portfolio__project {
-    background-image: linear-gradient(#0009,#0009), url("dalto.jpeg");
+.portfolio__project:first-child{
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_1.jpeg");
+    background-position: center;
+    background-size:cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.portfolio__project:nth-child(2) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_6.jpeg");
+    background-position:top;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+    
+}
+
+.portfolio__project:nth-child(3) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_7.jpeg");
     background-position: center;
     background-size: cover;
     display: grid;
@@ -711,9 +736,71 @@ h1 {
     animation-range: cover 5% cover 40%;
 }
 
+.portfolio__project:nth-child(4) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_4.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.portfolio__project:nth-child(5) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_8.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.portfolio__project:nth-child(6) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_2.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.portfolio__project:nth-child(7) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_5.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+.portfolio__project:nth-child(8) {
+    background-image: linear-gradient(#0003,#0003), url("img/cuadro_3.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
+}
+
+
 .portfolio__project:hover {
     opacity: 0.74;
-    outline: 2px solid #fff6
+    outline: 2px solid #fff6;
+
 }
 
 /* -------- PORTFOLIO QUERIES --------*/
@@ -727,8 +814,12 @@ h1 {
         grid-column: span 2;
     }
 
-    .portfolio__project:nth-child(6) {
-        grid-column: span 2;
+    .portfolio__project:nth-child(5){
+        grid-row: span 2
+    }
+
+    .portfolio__project:last-child {
+        grid-column: span 1;
     }
 }
 
@@ -738,11 +829,31 @@ h1 {
     }
 
     .portfolio__project:first-child {
-        grid-column: span 2;
+        grid-column: span 3;
         grid-row:span 2
     }
 
-    .portfolio__project:nth-child(6) {
+    .portfolio__project:nth-child(4){
+        grid-row: span 2;
+    }
+
+    .portfolio__project:nth-child(5){
+        grid-row: span 1
+    }
+
+    .portfolio__project:nth-child(6){
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    .portfolio__project:nth-child(7){
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+
+    .portfolio__project:last-child {
         grid-column: span 4;
         
     }
